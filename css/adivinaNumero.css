@@ -1,0 +1,103 @@
+/* Estilo general */
+
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Estilo del título */
+  
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Estilo del formulario */
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  input[type="number"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #eee;
+    border-radius: 0.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    width: 10rem;
+  }
+  
+  button[type="submit"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #ff5733;
+    color: #fff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    width: 10rem;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #e65228;
+  }
+  
+  /* Estilo del resultado */
+  
+  #resultado {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  #resultado span {
+    font-weight: bold;
+    color: #ff5733;
+  }
+  
+  /* Estilo de las vidas */
+  
+  #vidas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  #vidas span {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+  }
+  
+  #vidas img {
+    height: 2rem;
+    margin-right: 0.5rem;
+  }
+  
+  /* Estilo del mensaje de victoria */
+  
+  #victoria {
+    display: none;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+  
+  #victoria span {
+    font-weight: bold;
+    color: #ff5733;
+  }
+  

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego de números</title>
+    <link rel="stylesheet" href="/css/adivinaNumero.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <h1>Juego de números</h1>
+      <form>
+        <label for="numero-jugador1">Jugador 1:</label>
+        <input
+          type="number"
+          id="numero-jugador1"
+          name="numero-jugador1"
+          min="1"
+          max="100"
+        />
+
+        <label for="numero-jugador2">Jugador 2:</label>
+        <input
+          type="number"
+          id="numero-jugador2"
+          name="numero-jugador2"
+          min="1"
+          max="100"
+        />
+
+        <button type="submit" id="calcular">Calcular</button>
+      </form>
+
+      <div id="resultado"></div>
+    </div>
+
+    <script src="juego.js"></script>
+  </body>
+</html>

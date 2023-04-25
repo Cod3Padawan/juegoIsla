@@ -5,70 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Desafío en la Isla</title>
-    <style>
-      body {
-        background-image: url(/imagenes/fondoIsla2.jpg);
-        background-size: cover; /* Ajustar la imagen al tamaño de la ventana */
-        background-repeat: no-repeat; /* Evitar la repetición de la imagen */
-      }
-
-      h1 {
-        font-size: 100px;
-        color: white;
-        text-align: center;
-        margin-top: 100px;
-      }
-
-      .botones {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 200px;
-      }
-
-      .boton {
-        background-color: #ff4136;
-        border: none;
-        color: white;
-        padding: 10px 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 80px;
-        margin: 10px;
-        cursor: pointer;
-      }
-
-      .boton:hover {
-        background-color: #85144b;
-      }
-    </style>
+    <link rel="stylesheet" href="/css/index.css" />
   </head>
   <body>
     <h1>Desafío en la Isla</h1>
 
     <div class="botones">
-      <a href="ahorcado.html" class="boton" id="jugar">Jugar</a>
+      <a href="/html/ahorcado.html" class="boton" id="jugar">Jugar</a>
       <a href="#" class="boton">Reglas</a>
       <a href="#" class="boton">Records</a>
     </div>
 
-    <script>
-      // Obtén el botón "Jugar" y agrega un evento clic para mostrar un cuadro de diálogo
-      document
-        .getElementById("jugar")
-        .addEventListener("click", function (event) {
-          // Evita la redirección predeterminada al hacer clic en el botón
-          event.preventDefault();
-
-          // Pide al usuario que introduzca su nick y guárdalo en una variable
-          var nick = prompt("Introduce tu nick:");
-
-          // Si el usuario ingresa un nick, redirigirlo a ahorcado.html y pasar el nick como parámetro en la URL
-          if (nick) {
-            window.location.href = "ahorcado.html?nick=" + nick;
-          }
-        });
-    </script>
+    <script src="/javascript/index.js"></script>
   </body>
 </html>

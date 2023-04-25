@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego del Ahorcado - Desafío en la Isla</title>
+    <link rel="stylesheet" href="/css/ahorcado.css" />
+  </head>
+  <body>
+    <div id="contador">90</div>
+
+    <h1>Juego del Ahorcado - Desafío en la Isla</h1>
+
+    <p>Adivina la palabra antes de que se complete el ahorcado...</p>
+
+    <input type="text" maxlength="1" id="letra" /><button id="calcular">
+      Evaluar letra
+    </button>
+
+    <p id="output"></p>
+
+    <div id="letras-introducidas"></div>
+
+    <div id="ahorcado"></div>
+
+    <div id="ganador">
+      <p>Victoria</p>
+      <p>Enhorabuena, sigues vivo</p>
+    </div>
+
+    <a href="/index.html">
+      <button class="boton-menu">Volver al menú principal</button>
+    </a>
+
+    <script src="/javascript/ahorcado.js"></script>
+    <script>
+      // Obtén el valor del parámetro "nick" de la URL
+      var urlParams = new URLSearchParams(window.location.search);
+      var nick = urlParams.get("nick");
+
+      // Usa el nick para mostrar un mensaje de bienvenida personalizado
+      if (nick) {
+        alert("¡Bienvenido/a, " + nick + "!");
+      }
+    </script>
+  </body>
+</html>
