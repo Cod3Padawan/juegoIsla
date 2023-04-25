@@ -17,40 +17,6 @@ const palabras = [
   "independiente",
   "periodico",
   "oportunidad",
-  "enciclopedia",
-  "propaganda",
-  "hereditario",
-  "puerco",
-  "construccion",
-  "invitacion",
-  "concentracion",
-  "moneda",
-  "experimento",
-  "universidad",
-  "condominio",
-  "matrimonio",
-  "sandalia",
-  "propiedad",
-  "venganza",
-  "agujero",
-  "azotea",
-  "efervescencia",
-  "agricultor",
-  "historia",
-  "planificacion",
-  "personalidad",
-  "abogado",
-  "espectro",
-  "auditoria",
-  "administracion",
-  "comunicacion",
-  "comercializacion",
-  "desarrollo",
-  "implementacion",
-  "funcionalidad",
-  "presupuesto",
-  "infraestructura",
-  "institucion",
 ];
 
 // Declara una variable llamada intervalId sin asignarle ningún valor
@@ -83,7 +49,7 @@ document.querySelector("#output").innerHTML = palabraConGuiones;
 const contador = document.getElementById("contador");
 
 // Se inicializa la variable "tiempoRestante" en 45 segundos
-let tiempoRestante = 45;
+let tiempoRestante = 90;
 
 // Se crea un intervalo que disminuye el valor de "tiempoRestante" en 1 cada segundo y actualiza el contenido del elemento con el id "contador" con el valor actualizado de "tiempoRestante". Si el valor de "tiempoRestante" es menor o igual a 0, se detiene el intervalo, se muestra una alerta, se establece el contenido del elemento con el id "output" como el valor de la variable "palabra" y se deshabilita el botón con el id "calcular"
 const cuentaRegresiva = setInterval(() => {
