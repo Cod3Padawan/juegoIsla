@@ -1,5 +1,5 @@
 body {
-    background-image: url(/imagenes/fondoAhorcado.jpeg);
+    background-image: url(/imagenes/fondo3.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -44,9 +44,12 @@ body {
   }
   
   #ahorcado{
+    margin-bottom: 50px;
+    position: absolute;
+    bottom: 40px;
     height: 220px;
     width: 200px;
-    background-image: url(/imagenes/fotoAhorcado2.png);
+    background-image: url(/imagenes/fotoAhorcado3.png);
   }
   
   
@@ -55,16 +58,23 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: url(/imagenes/sangre2.png);
+    background-image: url(/imagenes/sangre3.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
   }
   
+  
   #ahorcado.fallo::after {
-    opacity: 1;
+    content: "X";
+    display: inline-block;
+    padding: 5px;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
   }
   
   #ahorcado.fallo {
@@ -107,6 +117,17 @@ body {
       transform: rotate(0deg);
     }
   }
+
+  
+  .boton-menu {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 20px 0;
+    margin-top: 20px;
+  }
+  
 
   .boton-menu {
     font-size: 24px;

@@ -17,6 +17,40 @@ const palabras = [
   "independiente",
   "periodico",
   "oportunidad",
+  "enciclopedia",
+  "propaganda",
+  "hereditario",
+  "puerco",
+  "construccion",
+  "invitacion",
+  "concentracion",
+  "moneda",
+  "experimento",
+  "universidad",
+  "condominio",
+  "matrimonio",
+  "sandalia",
+  "propiedad",
+  "venganza",
+  "agujero",
+  "azotea",
+  "efervescencia",
+  "agricultor",
+  "historia",
+  "planificacion",
+  "personalidad",
+  "abogado",
+  "espectro",
+  "auditoria",
+  "administracion",
+  "comunicacion",
+  "comercializacion",
+  "desarrollo",
+  "implementacion",
+  "funcionalidad",
+  "presupuesto",
+  "infraestructura",
+  "institucion",
 ];
 
 // Declara una variable llamada intervalId sin asignarle ningún valor
@@ -104,7 +138,7 @@ document.querySelector("#calcular").addEventListener("click", () => {
     document.querySelector("#ahorcado").style.backgroundPosition =
       -(207 * contadorFallos) + "px 0"; // Se cambia la posición de la imagen del ahorcado según el número de fallos
     // Si se han cometido 4 fallos, se pierde la partida
-    if (contadorFallos == 4) {
+    if (contadorFallos == 5) {
       clearInterval(intervalId); // Se detiene la cuenta regresiva del tiempo
       alert("Has muerto");
       document.querySelector("#output").innerHTML = palabra; // Se muestra la palabra oculta completa

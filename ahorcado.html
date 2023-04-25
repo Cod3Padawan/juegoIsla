@@ -25,8 +25,8 @@
     <div id="ahorcado"></div>
 
     <div id="ganador">
-        <p>Victoria</p>
-        <p>Enhorabuena, sigues vivo</p>
+      <p>Victoria</p>
+      <p>Enhorabuena, sigues vivo</p>
     </div>
 
     <a href="index.html">
@@ -34,5 +34,15 @@
     </a>
 
     <script src="javascript.js"></script>
+    <script>
+      // Obtén el valor del parámetro "nick" de la URL
+      var urlParams = new URLSearchParams(window.location.search);
+      var nick = urlParams.get("nick");
+
+      // Usa el nick para mostrar un mensaje de bienvenida personalizado
+      if (nick) {
+        alert("¡Bienvenido/a, " + nick + "!");
+      }
+    </script>
   </body>
 </html>
